@@ -33,6 +33,22 @@ run_index = 0
 
 var TIMESTEPS = 20;
 
+function post(url, data, callback) {
+	$.ajax({
+		type: "POST", 
+		contentType: "application/json",
+		url: url,
+		data: JSON.stringify(data),
+		success: callback,
+		dataType: "json"
+	});
+}
+
+
+function send_action(action) {
+	post('https://10.0.0.1:8000/push', {player: $('select').val(), action: action})
+}
+
 tf.loadLayersModel('/model_js/model.json').then(function(m) {
 	model = m;
 
@@ -61,8 +77,9 @@ tf.loadLayersModel('/model_js/model.json').then(function(m) {
 	  				activation[curr_class] = 1;
 	  			} else {
 	  				activation[curr_class] = 0;
-	  				// $('body').append('<p>Gesture ' + curr_class + ' detected</p>');
+	  				$('body').append('<p>Gesture ' + curr_class + ' detected</p>');
 	  				sounds[curr_class].play();
+	  				// send_action(curr_class.replace('_', ''));
 	  				cooldown[curr_class] = COOLDOWN;
 	  			}
 	  		} else {

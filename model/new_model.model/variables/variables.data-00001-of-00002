@@ -1,0 +1,84 @@
+ÓC,U[{"class_name": "Sequential", "config": {"layers": [{"class_name": "Conv1D", "config": {"activation": "relu", "activity_regularizer": null, "batch_input_shape": [null, 20, 3], "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "data_format": "channels_last", "dilation_rate": [1], "dtype": "float32", "filters": 20, "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "kernel_size": [5], "name": "conv1d", "padding": "valid", "strides": [1], "trainable": true, "use_bias": true}}, {"class_name": "Dropout", "config": {"dtype": "float32", "name": "dropout", "noise_shape": null, "rate": 0.5, "seed": null, "trainable": true}}, {"class_name": "Conv1D", "config": {"activation": "relu", "activity_regularizer": null, "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "data_format": "channels_last", "dilation_rate": [1], "dtype": "float32", "filters": 10, "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "kernel_size": [10], "name": "conv1d_1", "padding": "valid", "strides": [1], "trainable": true, "use_bias": true}}, {"class_name": "Flatten", "config": {"data_format": "channels_last", "dtype": "float32", "name": "flatten", "trainable": true}}, {"class_name": "Dropout", "config": {"dtype": "float32", "name": "dropout_1", "noise_shape": null, "rate": 0.5, "seed": null, "trainable": true}}, {"class_name": "Dense", "config": {"activation": "sigmoid", "activity_regularizer": null, "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "dtype": "float32", "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "name": "dense", "trainable": true, "units": 3, "use_bias": true}}], "name": "sequential"}}âdNœ9{"class_name": "InputLayer", "config": {"batch_input_shape": [null, 20, 3], "dtype": "float32", "name": "conv1d_input", "sparse": false}}∫≠Àπö{"class_name": "Conv1D", "config": {"activation": "relu", "activity_regularizer": null, "batch_input_shape": [null, 20, 3], "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "data_format": "channels_last", "dilation_rate": [1], "dtype": "float32", "filters": 20, "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "kernel_size": [5], "name": "conv1d", "padding": "valid", "strides": [1], "trainable": true, "use_bias": true}}èﬁ’,V{"class_name": "Dropout", "config": {"dtype": "float32", "name": "dropout", "noise_shape": null, "rate": 0.5, "seed": null, "trainable": true}}ô≤u÷e{"class_name": "Conv1D", "config": {"activation": "relu", "activity_regularizer": null, "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "data_format": "channels_last", "dilation_rate": [1], "dtype": "float32", "filters": 10, "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "kernel_size": [10], "name": "conv1d_1", "padding": "valid", "strides": [1], "trainable": true, "use_bias": true}}`P˜w{"class_name": "Flatten", "config": {"data_format": "channels_last", "dtype": "float32", "name": "flatten", "trainable": true}}ë•H}’{"class_name": "Dropout", "config": {"dtype": "float32", "name": "dropout_1", "noise_shape": null, "rate": 0.5, "seed": null, "trainable": true}}¶§DÇœ{"class_name": "Dense", "config": {"activation": "sigmoid", "activity_regularizer": null, "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {}}, "bias_regularizer": null, "dtype": "float32", "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"seed": null}}, "kernel_regularizer": null, "name": "dense", "trainable": true, "units": 3, "use_bias": true}}–‚ö«z{"class_name": "RMSprop", "config": {"centered": false, "decay": 0.0, "epsilon": 1.0000000116860974e-07, "learning_rate": 0.0010000000474974513, "momentum": 0.0, "name": "RMSprop", "rho": 0.8999999761581421}}ˇO¨ú 
+Ò
+layer-0
+layer_with_weights-0
+layer-1
+layer-2
+layer_with_weights-1
+layer-3
+layer-4
+layer-5
+layer_with_weights-2
+layer-6
+	optimizer7
+OBJECT_CONFIG_JSON/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+@>
+OBJECT_CONFIG_JSON&layer-0/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+c
+
+	kernel
+
+biasK
+OBJECT_CONFIG_JSON3layer_with_weights-0/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+@>
+OBJECT_CONFIG_JSON&layer-2/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+c
+
+kernel
+biasK
+OBJECT_CONFIG_JSON3layer_with_weights-1/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+@>
+OBJECT_CONFIG_JSON&layer-4/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+@>
+OBJECT_CONFIG_JSON&layer-5/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+c
+
+kernel
+biasK
+OBJECT_CONFIG_JSON3layer_with_weights-2/.ATTRIBUTES/OBJECT_CONFIG_JSON 
+–
+iter
+	decay
+epsilon
+learning_rate
+momentum
+rho@
+OBJECT_CONFIG_JSON(optimizer/.ATTRIBUTES/OBJECT_CONFIG_JSON 		rms	
+rms	rms	rms	rms	rms
+YW
+VARIABLE_VALUEconv1d/kernel6layer_with_weights-0/kernel/.ATTRIBUTES/VARIABLE_VALUE
+US
+VARIABLE_VALUEconv1d/bias4layer_with_weights-0/bias/.ATTRIBUTES/VARIABLE_VALUE
+[Y
+VARIABLE_VALUEconv1d_1/kernel6layer_with_weights-1/kernel/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEconv1d_1/bias4layer_with_weights-1/bias/.ATTRIBUTES/VARIABLE_VALUE
+XV
+VARIABLE_VALUEdense/kernel6layer_with_weights-2/kernel/.ATTRIBUTES/VARIABLE_VALUE
+TR
+VARIABLE_VALUE
+dense/bias4layer_with_weights-2/bias/.ATTRIBUTES/VARIABLE_VALUE
+CA
+VARIABLE_VALUEiter)optimizer/iter/.ATTRIBUTES/VARIABLE_VALUE
+VT
+VARIABLE_VALUEtraining/RMSprop/decay*optimizer/decay/.ATTRIBUTES/VARIABLE_VALUE
+ZX
+VARIABLE_VALUEtraining/RMSprop/epsilon,optimizer/epsilon/.ATTRIBUTES/VARIABLE_VALUE
+fd
+VARIABLE_VALUEtraining/RMSprop/learning_rate2optimizer/learning_rate/.ATTRIBUTES/VARIABLE_VALUE
+\Z
+VARIABLE_VALUEtraining/RMSprop/momentum-optimizer/momentum/.ATTRIBUTES/VARIABLE_VALUE
+RP
+VARIABLE_VALUEtraining/RMSprop/rho(optimizer/rho/.ATTRIBUTES/VARIABLE_VALUE
+çä
+VARIABLE_VALUE"training/RMSprop/conv1d/kernel/rmsTlayer_with_weights-0/kernel/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
+âÜ
+VARIABLE_VALUE training/RMSprop/conv1d/bias/rmsRlayer_with_weights-0/bias/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
+èå
+VARIABLE_VALUE$training/RMSprop/conv1d_1/kernel/rmsTlayer_with_weights-1/kernel/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
+ãà
+VARIABLE_VALUE"training/RMSprop/conv1d_1/bias/rmsRlayer_with_weights-1/bias/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
+åâ
+VARIABLE_VALUE!training/RMSprop/dense/kernel/rmsTlayer_with_weights-2/kernel/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
+àÖ
+VARIABLE_VALUEtraining/RMSprop/dense/bias/rmsRlayer_with_weights-2/bias/.OPTIMIZER_SLOT/optimizer/rms/.ATTRIBUTES/VARIABLE_VALUE
