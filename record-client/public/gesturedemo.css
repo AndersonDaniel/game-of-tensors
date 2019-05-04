@@ -1,0 +1,94 @@
+body {
+	color: rgb(250, 250, 250);
+	padding: 0;
+	margin: 0;
+}
+
+#model_status {
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	font-family: Tahoma;
+	font-size: 5em;
+	top: 22%;
+}
+
+#instructions {
+	display: none;
+	position: absolute;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	font-family: Tahoma;
+	font-size: 4em;
+	top: 35%;	
+}
+
+#start {
+	display: none;
+	width: 50%;
+	left: 25%;
+	background: rgb(240, 240, 240);
+	top: 35%;
+	position: absolute;
+	font-family: Tahoma;
+	font-size: 5em;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	border-radius: 5px;
+	z-index: 2;
+}
+
+#dragon {
+	background-image: url('dragon.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 60%;
+	height: 70%;
+	left: 15%;
+	width: 70%;
+}
+
+#back1 {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100%;
+}
+
+#back2 {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	height: 80%;
+}
+
+#back1 {
+	background-image: url('background.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: -2;
+}
+
+#back2 {
+	background-image: url('smoke.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+#logo {
+	background-image: url('logo.png');
+	background-size: 50%;
+	background-repeat: no-repeat;
+	background-position: center top;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
