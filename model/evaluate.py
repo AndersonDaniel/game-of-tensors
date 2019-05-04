@@ -5,7 +5,7 @@ df = pd.read_csv('evaluation.csv')
 df = df[20:]
 N = df.shape[0]
 
-plt.figure(figsize=(15, 15))
+plt.figure(figsize=(25, 15))
 
 plt.subplot(231)
 plt.hexbin(df['flick_score'], df['predicted_flick_score'], cmap='inferno', gridsize=25, bins='log')
@@ -42,4 +42,5 @@ plt.plot(range(N), df['throw_score'], alpha=0.7)
 plt.plot(range(N), df['predicted_throw_score'], alpha=0.7)
 plt.title('Throws')
 
+plt.savefig('model_performance.png')
 plt.show()
