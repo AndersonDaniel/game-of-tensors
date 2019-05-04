@@ -17,3 +17,6 @@ Model's architecture:
 
 Model performance, which includes for each class: the correlation between actual score and predicted score (top row) and the event timeline, with peaks for the actual and predicted confidence scores (bottom row):
 ![Gesture model performance](https://github.com/AndersonDaniel/game-of-tensors/blob/master/model/model_performance.png?raw=true)
+
+### Try out the model
+We created a simple web page (hosted on Firebase) to showcase the gesture model. It currently works for Android only, and it's far from perfect (worked for around 70% of devices we tried). Go on, give it a try at https://tensor-game.firebaseapp.com/gesturedemo.html ! (Use Google Chrome on Android)
