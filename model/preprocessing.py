@@ -7,8 +7,6 @@ test = pd.read_csv('test.csv').fillna('')
 def transform(df):
 	return score(df)
 
-	return score(df)
-
 def score(df):
 	i = 0
 	all_labels = sorted([x for x in df['class'].drop_duplicates().values if x])
